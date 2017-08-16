@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="chatApp">
+	<head>    
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	    <link rel="stylesheet" href="chat.css">
+	    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script src="chatcontroller.js"></script>
+	  <!-- <script>
+	               var objDiv = document.getElementById("main");
+                   objDiv.scrollTop = objDiv.scrollheight();
+
+
+
+</script>-->
+
+	</head>
+	<body ng-controller="chatCtrl" style="background-color: #E6E6E6">
+		<div class="container" style="padding-top:50px;">
+		    <div class="row">
+		         <div class="col-lg-5">
+		             <div class="col-lg-9 " style="padding-right: 0px">
+		                <div class="panel"  >
+		                    <div  class="panel-heading" style="height:60%;background: #006666;" >
+		                         <span class="glyphicon glyphicon-comment" style="font-size: 40px; color:#FFFFFF;"></span> 
+		                    </div>
+							<div  class="panel-body " style="height:450px;"  >
+							
+								
+								<div id="messages" class="messages" style="overflow:scroll;">
+              
+			                   <div class="wrap">
+							<div class="cell">
+							<ul>
+			                    <li ng-repeat="x in messageList">
+			                       <span style="font-size: 18px; background-color: white;font-family:  Helvetica, Arial, sans-serif;" class="left" ng-bind="x.todoText"></span>
+                                    <div class="clear" style="padding-bottom: 12px;"></div>
+			                        <span style="font-size: 18px; font-family:  Helvetica, Arial, sans-serif;"" class="right" ng-bind="x.replyText"></span>
+			                        <div class="clear" style="padding-bottom: 12px;"></div>
+			                    </li> 
+
+                                        
+                </ul>
+                
+								</div></div>
+								
+							</div>
+							<div class="panel-footer" style="background-color: white">
+			                    <form ng-submit="sendMessage()">
+			                       <input type="text" placeholder=" Ask something..." ng-model="message" style="border-width:0px; width:90%;height:50px; padding-left: 2px; font-size: 18px; outline: none;" autofocus />
+			                      <span class="glyphicon glyphicon-send" style="font-size: 20px; align-self: right;" ng-click="sendMessage();"></span>
+								</form>
+							</div>
+		                </div>
+		             </div>
+		         </div>
+		     </div> 
+            
+            <div class="col-lg-5">
+             <div class="row">
+              
+           
+               <h2 style="color: #006666;">A chatbot is a computer program which conducts a conversation via auditory or textual methods. Such programs are often designed to convincingly simulate </h2>
+                 </div>
+                 
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-5">
+              <div class="row">
+              <div class="col-lg-7">
+              </div>
+              <div class="col-lg-5">
+               <h2 style="color: #006666;padding-left: 
+               70px; ">ChatBot</h2>
+                 </div>
+                 </div>  
+                  
+                   
+                   <div class="row" style="padding-top: 50px; ">
+                    <img src="img/chat-bot.png" style="width: 550px;" />
+                   </div>
+             </div>
+            </div>
+
+
+		</div> 
+		</div>
+
+	</body>
+</html>
+
+
