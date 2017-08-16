@@ -1,0 +1,137 @@
+
+            
+            .messages
+            {
+                padding: 10px;
+                height: 360px;
+                background-color: green;
+                background-color: rgb(237, 239, 244);
+                border-width: 0px;
+                border-color: black;
+                border-style: solid;
+            
+
+            }
+
+            .messages ul
+            {
+                padding: 0px;
+                
+            }
+
+            .messages ul li
+            {
+                height: auto;
+                margin-bottom: 10px;
+                clear: both;
+                padding-left: 10px;
+                padding-right: 10px;
+                            }
+
+            
+
+            .messages ul li span.left
+            {
+                float: left;
+                
+            }
+
+            .messages ul li span.left:after
+            {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 0px;
+                width: 0px;
+                border-top: 0px solid transparent;
+                border-bottom: 0px solid transparent;
+                border-right: 0px solid white;
+                padding-bottom: 2px;
+              
+                
+            }
+
+            .messages ul li span.left:before
+            {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 0px;
+                width: 0px;
+                border-top: 0px solid transparent;
+                border-bottom: 0px solid transparent;
+                border-right: 0px solid black;
+                padding-bottom: 2px;
+                 
+            }
+
+            .messages ul li span.right:after
+            {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height: 0px;
+                width: 0px;
+                border-top: 0px solid transparent;
+                border-bottom: 0px solid transparent;
+                border-left: 0px ;
+              
+            }
+
+            .messages ul li span.right:before
+            {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height: 0px;
+                width: 0px;
+                border-top: 0px solid transparent;
+                border-bottom: 0x solid transparent;
+                border-left: 0px solid ;
+                 
+            }
+
+            .messages ul li span.right
+            {
+                float: right;
+                background-color: #dbedfe;
+                
+            }
+
+            .clear
+            {
+                clear: both;
+                vertical-align: bottom;
+            }
+
+            div.wrap 
+            {
+                display: table;
+                height: 300px;
+                width: 260px;
+                background: greay;
+            }
+
+            div.cell 
+            {
+                display: table-cell;
+                vertical-align: bottom;
+            
+            }
+
+            div.cell span 
+            {
+                display: block;
+                
+            }
+
+
+            
+            
